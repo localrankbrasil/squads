@@ -1,0 +1,30 @@
+name: "Blog Posts SEO"
+code: "blog-posts-seo"
+description: "Squad especializado em criar blog posts otimizados para SEO, com foco em brasileiros que possuem negócios locais nos EUA. Cobre estratégia de keyword, pesquisa, escrita, otimização, imagens e checklist de publicação."
+icon: "✍️"
+language: "pt-BR"
+
+skills:
+  - web_search
+  - web_fetch
+
+data:
+  - pipeline/data/skill-blog-post-writer.md
+  - pipeline/data/seo-playbook.md
+  - pipeline/data/readability-playbook.md
+  - pipeline/data/fluxo-operacional-asana.md
+  - pipeline/data/templates/blog-post.md
+  - pipeline/data/templates/checklist-seo.md
+
+pipeline: pipeline/pipeline.yaml
+
+agents:
+  - agents/estrategista-seo.agent.md
+  - agents/pesquisador.agent.md
+  - agents/redator.agent.md
+  - agents/otimizador-seo.agent.md
+  - agents/revisor.agent.md
+  - agents/diretor-visual.agent.md
+
+memory: _memory/memories.md
+runs: _memory/runs.md
