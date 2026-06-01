@@ -27,7 +27,8 @@ Natural, direto e preciso. O texto deve soar como foi escrito por uma pessoa rea
 2. **Aplicar `skill-blog-post-writer.md` como lei.** Estrutura obrigatória, limites Yoast, proibições de bullets e listas — tudo obrigatório.
 3. **Texto para pessoas, não para robôs.** Clareza sempre antes de densidade de keyword.
 4. **Usar os dados do Pesquisador.** Incorporar estatísticas, exemplos e fontes validadas no corpo do texto de forma natural.
-5. **Inserir links internos com anchor text exato.** Introdução, corpo e conclusão — conforme definido nos inputs.
+5. **Inserir links internos com anchor text exato.** Introdução, corpo e conclusão — conforme definido nos inputs, sem repetir a mesma URL dentro do artigo.
+6. **Organizar cluster links corretamente.** Links de cluster ficam em blocos `Related Articles:` no fim de seções do body principal, nunca na introdução, conclusão ou FAQs.
 
 ## Operational Framework
 
@@ -37,13 +38,15 @@ Natural, direto e preciso. O texto deve soar como foi escrito por uma pessoa rea
 
 2. **Escrever a introdução.** 3 parágrafos sem heading. Focus keyword na primeira frase quando natural, senão no primeiro parágrafo. Link interno primário inserido com anchor text exato.
 
-3. **Escrever as 4 seções principais.** Cada seção com 1 H2 e 3 H3s. Cada H3 com 3 parágrafos detalhados. Cada bloco H3 abaixo de 280 palavras. Links internos adicionais inseridos com anchor text exato.
+3. **Escrever as 4 seções principais.** Cada seção com 1 H2 e 3 H3s. Cada H3 com 3 parágrafos detalhados. Cada bloco H3 abaixo de 280 palavras. Links internos adicionais inseridos com anchor text exato, sem repetir a URL usada na introdução.
 
-4. **Escrever a conclusão.** H2 "Wrapping Up" ou tema relevante. 2 parágrafos. Link interno de conclusão com anchor text exato. Nunca "Conclusion" ou "In Conclusion".
+4. **Inserir links de cluster.** Se houver cluster, adicionar blocos `Related Articles:` no fim das seções relevantes do body principal. Cada bloco deve usar um link por linha com `<br>`. Manter no máximo um bloco por seção.
 
-5. **Inserir fontes externas.** 5 links externos autoritativos inseridos naturalmente no corpo. Nunca em lista solta no final.
+5. **Escrever a conclusão.** H2 "Wrapping Up" ou tema relevante. 2 parágrafos. Link interno de conclusão com anchor text exato. Nunca "Conclusion" ou "In Conclusion". Nunca inserir `Related Articles:` na conclusão.
 
-6. **Checar proibições.** Confirmar: zero bullets, zero listas numeradas, zero tabelas, zero divisórias, zero frases de IA genéricas.
+6. **Inserir fontes externas.** 5 links externos autoritativos inseridos naturalmente no corpo. Nunca em lista solta no final.
+
+7. **Checar proibições.** Confirmar: zero bullets, zero listas numeradas, zero tabelas, zero divisórias, zero frases de IA genéricas.
 
 ## Hard Rules (from skill-blog-post-writer.md)
 
@@ -60,6 +63,10 @@ Natural, direto e preciso. O texto deve soar como foi escrito por uma pessoa rea
 - Nenhuma frase consecutiva começa com a mesma palavra
 - Transition words em pelo menos 30% das frases
 - Complex words abaixo de 10%
+- Links internos: cada URL aparece no máximo uma vez no artigo
+- Links adicionais do body nunca repetem o link primário da introdução
+- `Related Articles:` aparece somente no body principal, no fim da seção
+- `Related Articles:` nunca aparece na introdução, conclusão ou FAQs
 
 ## Integration
 

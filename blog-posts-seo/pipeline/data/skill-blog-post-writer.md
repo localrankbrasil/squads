@@ -334,6 +334,40 @@ Use body links inside body sentences with exact anchor text. Never put links in 
 
 Use the conclusion link naturally in the conclusion with exact anchor text.
 
+Each internal URL can appear only once in the article.
+
+Never repeat the primary introduction URL as an additional body link.
+
+If the client provides a default body-link list, choose only links that fit the topic and exclude any URL already used as the primary introduction link.
+
+Distribute body links evenly through the main body. Avoid paragraphs with multiple contextual internal links unless the paragraph is a dedicated related-content block.
+
+When a topic uses a service URL as the primary introduction link, that same service URL must not appear again in the body or conclusion.
+
+## Cluster Links
+
+When the post belongs to a content cluster, add related cluster posts inside the main body only.
+
+Use this Gutenberg/HTML paragraph format:
+
+```html
+<!-- wp:paragraph -->
+<p><strong>Related Articles:</strong><br><a href="https://example.com/first-article/">First Related Article Title</a><br><a href="https://example.com/second-article/">Second Related Article Title</a></p>
+<!-- /wp:paragraph -->
+```
+
+Rules:
+
+- label must be exactly `Related Articles:`
+- links must appear one per line with `<br>`
+- place the block at the end of a relevant body section, after that section's normal paragraphs
+- never place related-content blocks in the introduction, conclusion, or FAQ section
+- never place `Related Articles:` immediately after an H2 or H3
+- keep only one `Related Articles:` block per section
+- when updating old cluster posts, add the new backlink to an existing `Related Articles:` block when one exists
+- never create two consecutive `Related Articles:` blocks in the same section
+- after publishing a new cluster post, update old cluster posts with a backlink to the new post
+
 ## External Links
 
 Include 5 authoritative external links from `.gov`, `.edu`, or official industry organizations.

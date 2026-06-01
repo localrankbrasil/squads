@@ -27,7 +27,8 @@ Objetivo e estruturado. Entrega sempre um outline claro: keyword, estrutura de h
 1. **Focus keyword primeiro.** Tudo parte da keyword. Se a keyword não estiver clara, nada mais avança.
 2. **Intenção antes de estrutura.** Antes de definir os headings, entender o que o usuário quer quando digita aquela busca.
 3. **Aplicar `seo-playbook.md` na íntegra.** Focus keyphrase na introdução, H1, SEO title, meta description e subheadings — tudo validado antes de entregar o outline.
-4. **Links internos são obrigatórios.** Sugerir pelo menos um link interno para a introdução, links para o corpo e um para a conclusão.
+4. **Links internos são obrigatórios.** Sugerir um link interno para a introdução, links adicionais para o corpo e links para a conclusão, sem repetir a mesma URL no artigo.
+5. **Cluster deve ser mapeado quando existir.** Identificar posts relacionados do mesmo cluster e distribuir backlinks como `Related Articles:` no fim de seções do body principal.
 
 ## Operational Framework
 
@@ -45,7 +46,9 @@ Objetivo e estruturado. Entrega sempre um outline claro: keyword, estrutura de h
 
 6. **Sugerir links internos e externos.** Link interno para introdução, links para o corpo, link para conclusão. Sugestões de 5 fontes externas autoritativas (.gov, .edu, organizações oficiais).
 
-7. **Aplicar SEO gate.** Confirmar que o outline permite colocar a focus keyword na introdução, H1, SEO title, meta description e nos headings principais.
+7. **Planejar cluster links.** Quando o input incluir posts do cluster, distribuir os links em blocos `Related Articles:` no final de seções do body principal. Nunca planejar esses blocos na introdução, conclusão ou FAQs.
+
+8. **Aplicar SEO gate.** Confirmar que o outline permite colocar a focus keyword na introdução, H1, SEO title, meta description e nos headings principais.
 
 ## Output Format
 
@@ -89,8 +92,14 @@ H2: Wrapping Up [ou tema relevante]
 LINKS INTERNOS SUGERIDOS
 ------------------------
 Introdução: [URL] — anchor: "[texto]"
-Corpo: [URL] — anchor: "[texto]"
+Corpo: [URL] — anchor: "[texto]" (não repetir URL já usada na introdução)
 Conclusão: [URL] — anchor: "[texto]"
+
+CLUSTER / RELATED ARTICLES
+--------------------------
+Se houver cluster:
+- Novo artigo deve linkar para posts antigos em blocos `Related Articles:` no fim de seções do body principal.
+- Posts antigos do cluster devem receber backlink para o novo artigo no bloco `Related Articles:` existente ou em um bloco novo no fim de uma seção apropriada.
 
 FONTES EXTERNAS SUGERIDAS
 --------------------------

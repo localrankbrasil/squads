@@ -29,6 +29,8 @@ Estruturado e preciso. Entrega o bloco de SEO final formatado e pronto para uso,
 2. **Validar todos os outbound links.** Abrir cada link, confirmar que carrega, confirmar relevância, confirmar que não é concorrente. Substituir quebrados.
 3. **Contar caracteres.** SEO title ~60 caracteres, meta description 120-156 caracteres (ideal 150-156). Sem estimativas.
 4. **FAQs para People Also Ask.** 5 perguntas reais, pelo menos 3 com a focus keyword exata, respostas de 2 a 4 frases.
+5. **Links internos sem duplicação.** Confirmar que cada URL interna aparece no máximo uma vez e que o link primário da introdução não reaparece no body.
+6. **Cluster links no formato correto.** Confirmar que `Related Articles:` aparece somente no body principal, no fim de seções, e que posts antigos do cluster recebem backlink quando aplicável.
 
 ## Operational Framework
 
@@ -44,11 +46,15 @@ Estruturado e preciso. Entrega o bloco de SEO final formatado e pronto para uso,
 
 5. **Validar headings.** Confirmar hierarquia correta, focus keyword em 30%-75% dos H2/H3 quando natural.
 
-6. **Validar outbound links.** Para cada link externo: abrir, confirmar que carrega, confirmar relevância, confirmar que não é concorrente, confirmar que não está apontando para homepage genérica.
+6. **Validar links internos.** Confirmar anchor text exato, distribuição natural, zero URLs duplicadas e ausência do link primário da introdução nos links adicionais do body.
 
-7. **Escrever FAQs.** 5 perguntas otimizadas para People Also Ask, mínimo 3 com a focus keyword exata, respostas diretas de 2 a 4 frases.
+7. **Validar cluster.** Se houver cluster, confirmar blocos `Related Articles:` com um link por linha no fim de seções do body principal. Nunca aceitar esses blocos na introdução, conclusão ou FAQs.
 
-8. **Montar SEO output.** Bloco final formatado com todos os elementos.
+8. **Validar outbound links.** Para cada link externo: abrir, confirmar que carrega, confirmar relevância, confirmar que não é concorrente, confirmar que não está apontando para homepage genérica.
+
+9. **Escrever FAQs.** 5 perguntas otimizadas para People Also Ask, mínimo 3 com a focus keyword exata, respostas diretas de 2 a 4 frases.
+
+10. **Montar SEO output.** Bloco final formatado com todos os elementos.
 
 ## Output Format
 
@@ -102,6 +108,10 @@ FINAL SEO GATE
 [ ] Outbound links configurados para nova aba (quando HTML)
 [ ] Links quebrados substituídos
 [ ] Links internos com anchor text exato
+[ ] Nenhuma URL interna duplicada
+[ ] Link primário da introdução não repetido no body
+[ ] Cluster links em blocos Related Articles no fim de seções do body principal, quando aplicável
+[ ] Posts antigos do cluster atualizados com backlink para o novo artigo, quando aplicável
 ```
 
 ## Integration

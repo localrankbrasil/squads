@@ -46,6 +46,12 @@
 - [ ] Headings seguem hierarquia H1/H2/H3 sem pular niveis
 - [ ] Headings descrevem claramente os paragrafos abaixo
 - [ ] Links internos incluidos com anchor text exato
+- [ ] Nenhuma URL interna aparece mais de uma vez no artigo
+- [ ] Link interno principal da introducao nao reaparece no body
+- [ ] Links internos adicionais distribuidos pelo body sem concentrar varios links no mesmo paragrafo
+- [ ] Links de cluster usam bloco `Related Articles:` no fim de secoes do body principal, quando aplicavel
+- [ ] Bloco `Related Articles:` nao aparece na introducao, conclusao ou FAQs
+- [ ] Posts antigos do cluster receberam backlink para o novo artigo, quando aplicavel
 - [ ] 5 links externos autoritativos incluidos naturalmente
 - [ ] Links externos verificados e funcionando
 - [ ] Links externos configurados para abrir em nova janela quando houver HTML
