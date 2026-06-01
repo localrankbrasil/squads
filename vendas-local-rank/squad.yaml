@@ -1,0 +1,26 @@
+name: "Vendas Local Rank"
+code: "vendas-local-rank"
+description: "Squad completo de vendas da Local Rank Brasil — qualificação de leads, mensagens de WhatsApp, propostas comerciais personalizadas e follow-ups estruturados, seguindo o Playbook de Vendas 2026."
+icon: "💼"
+version: "1.0.0"
+created: "2026-05-26"
+
+skills:
+  - web_search
+  - web_fetch
+
+data:
+  - pipeline/data/company-context.md
+  - pipeline/data/research-brief.md
+  - pipeline/data/domain-framework.md
+  - pipeline/data/quality-criteria.md
+  - pipeline/data/output-examples.md
+  - pipeline/data/anti-patterns.md
+
+pipeline: pipeline/pipeline.yaml
+
+agents:
+  - agents/carla-classificadora.agent.md
+  - agents/marcos-mensagem.agent.md
+  - agents/pedro-proposta.agent.md
+  - agents/renata-revisao.agent.md

@@ -1,0 +1,13 @@
+# Browser sessions (private — login cookies)
+opensquad/_browser_profile/
+
+# Logs
+opensquad/logs/
+**/logs/
+
+# Build artifacts
+**/_build/
+**/__pycache__/
+
+# Output gerado
+**/output/

@@ -1,0 +1,53 @@
+name: "Pipeline de Vendas Local Rank"
+code: "vendas-local-rank"
+version: "1.0.0"
+
+steps:
+  - step: 1
+    file: steps/step-01-input-lead.md
+    type: checkpoint
+    name: "input-lead"
+
+  - step: 2
+    file: steps/step-02-classificar-lead.md
+    type: agent
+    name: "classificar-lead"
+    agent: carla-classificadora
+    execution: inline
+
+  - step: 3
+    file: steps/step-03-confirmar-classificacao.md
+    type: checkpoint
+    name: "confirmar-classificacao"
+
+  - step: 4
+    file: steps/step-04-mensagens-whatsapp.md
+    type: agent
+    name: "mensagens-whatsapp"
+    agent: marcos-mensagem
+    execution: inline
+
+  - step: 5
+    file: steps/step-05-elaborar-proposta.md
+    type: agent
+    name: "elaborar-proposta"
+    agent: pedro-proposta
+    execution: inline
+
+  - step: 6
+    file: steps/step-06-revisar-output.md
+    type: agent
+    name: "revisar-output"
+    agent: renata-revisao
+    execution: inline
+    on_reject: 4
+
+  - step: 7
+    file: steps/step-07-aprovacao-final.md
+    type: checkpoint
+    name: "aprovacao-final"
+
+checkpoints:
+  - step-01-input-lead
+  - step-03-confirmar-classificacao
+  - step-07-aprovacao-final
