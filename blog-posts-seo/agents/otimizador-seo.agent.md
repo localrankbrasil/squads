@@ -30,7 +30,7 @@ Estruturado e preciso. Entrega o bloco de SEO final formatado e pronto para uso,
 3. **Contar caracteres.** SEO title ~60 caracteres, meta description 120-156 caracteres (ideal 150-156). Sem estimativas.
 4. **FAQs para People Also Ask.** 5 perguntas reais, pelo menos 3 com a focus keyword exata, respostas de 2 a 4 frases.
 5. **Links internos sem duplicação.** Confirmar que cada URL interna aparece no máximo uma vez e que o link primário da introdução não reaparece no body.
-6. **Cluster links no formato correto.** Confirmar que `Related Articles:` aparece somente no body principal, no fim de seções, e que posts antigos do cluster recebem backlink quando aplicável.
+6. **Cluster links no formato correto.** Confirmar que `Related Articles:` aparece somente no body principal, no fim de seções, e que posts antigos do cluster recebem backlink quando aplicável. Se for o primeiro post de um cluster novo, confirmar ausência de blocos de cluster.
 
 ## Operational Framework
 
@@ -112,6 +112,7 @@ FINAL SEO GATE
 [ ] Link primário da introdução não repetido no body
 [ ] Cluster links em blocos Related Articles no fim de seções do body principal, quando aplicável
 [ ] Posts antigos do cluster atualizados com backlink para o novo artigo, quando aplicável
+[ ] Primeiro post de cluster novo não recebeu Related Articles nem backlinks em posts antigos
 ```
 
 ## Integration

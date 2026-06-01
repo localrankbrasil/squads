@@ -12,6 +12,7 @@ Squad criado para produzir blog posts otimizados para SEO com foco em brasileiro
 - Links internos nunca devem repetir a mesma URL dentro do artigo; o link primario da introducao nao pode aparecer de novo no body.
 - Links adicionais ficam no body principal e devem ser distribuidos naturalmente, sem concentrar varios links em um paragrafo.
 - Links de cluster usam blocos `Related Articles:` no fim de secoes do body principal. Nunca entram na introducao, conclusao ou FAQs.
+- Se o artigo for o primeiro post de um cluster novo, nao inserir `Related Articles:` no post e nao adicionar backlinks em posts antigos.
 - Cada secao deve ter no maximo um bloco `Related Articles:`. Ao atualizar posts antigos do cluster, adicionar o novo backlink ao bloco existente da secao, sem criar bloco duplicado.
 - Quando publicar post de cluster, atualizar os posts antigos do cluster com backlink para o novo post.
 

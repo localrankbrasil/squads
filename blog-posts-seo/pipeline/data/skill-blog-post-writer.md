@@ -348,6 +348,8 @@ When a topic uses a service URL as the primary introduction link, that same serv
 
 When the post belongs to a content cluster, add related cluster posts inside the main body only.
 
+If the article is the first post in a brand-new cluster, do not add `Related Articles:` to that post and do not update older posts. Record that cluster links will start after a second related post exists.
+
 Use this Gutenberg/HTML paragraph format:
 
 ```html
@@ -367,6 +369,7 @@ Rules:
 - when updating old cluster posts, add the new backlink to an existing `Related Articles:` block when one exists
 - never create two consecutive `Related Articles:` blocks in the same section
 - after publishing a new cluster post, update old cluster posts with a backlink to the new post
+- skip all cluster-link insertion when the post is the first article in a new cluster
 
 ## External Links
 

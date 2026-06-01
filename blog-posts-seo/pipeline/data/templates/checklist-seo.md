@@ -52,6 +52,7 @@
 - [ ] Links de cluster usam bloco `Related Articles:` no fim de secoes do body principal, quando aplicavel
 - [ ] Bloco `Related Articles:` nao aparece na introducao, conclusao ou FAQs
 - [ ] Posts antigos do cluster receberam backlink para o novo artigo, quando aplicavel
+- [ ] Se for primeiro post de cluster novo, nenhum bloco `Related Articles:` foi inserido
 - [ ] 5 links externos autoritativos incluidos naturalmente
 - [ ] Links externos verificados e funcionando
 - [ ] Links externos configurados para abrir em nova janela quando houver HTML

@@ -28,7 +28,7 @@ Objetivo e estruturado. Entrega sempre um outline claro: keyword, estrutura de h
 2. **Intenção antes de estrutura.** Antes de definir os headings, entender o que o usuário quer quando digita aquela busca.
 3. **Aplicar `seo-playbook.md` na íntegra.** Focus keyphrase na introdução, H1, SEO title, meta description e subheadings — tudo validado antes de entregar o outline.
 4. **Links internos são obrigatórios.** Sugerir um link interno para a introdução, links adicionais para o corpo e links para a conclusão, sem repetir a mesma URL no artigo.
-5. **Cluster deve ser mapeado quando existir.** Identificar posts relacionados do mesmo cluster e distribuir backlinks como `Related Articles:` no fim de seções do body principal.
+5. **Cluster deve ser mapeado quando existir.** Identificar posts relacionados do mesmo cluster e distribuir backlinks como `Related Articles:` no fim de seções do body principal. Se for o primeiro post de um cluster novo, registrar que não há links de cluster a inserir ainda.
 
 ## Operational Framework
 
@@ -100,6 +100,7 @@ CLUSTER / RELATED ARTICLES
 Se houver cluster:
 - Novo artigo deve linkar para posts antigos em blocos `Related Articles:` no fim de seções do body principal.
 - Posts antigos do cluster devem receber backlink para o novo artigo no bloco `Related Articles:` existente ou em um bloco novo no fim de uma seção apropriada.
+- Se for o primeiro post do cluster, não inserir `Related Articles:` e não atualizar posts antigos.
 
 FONTES EXTERNAS SUGERIDAS
 --------------------------

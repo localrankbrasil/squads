@@ -28,7 +28,7 @@ Natural, direto e preciso. O texto deve soar como foi escrito por uma pessoa rea
 3. **Texto para pessoas, não para robôs.** Clareza sempre antes de densidade de keyword.
 4. **Usar os dados do Pesquisador.** Incorporar estatísticas, exemplos e fontes validadas no corpo do texto de forma natural.
 5. **Inserir links internos com anchor text exato.** Introdução, corpo e conclusão — conforme definido nos inputs, sem repetir a mesma URL dentro do artigo.
-6. **Organizar cluster links corretamente.** Links de cluster ficam em blocos `Related Articles:` no fim de seções do body principal, nunca na introdução, conclusão ou FAQs.
+6. **Organizar cluster links corretamente.** Links de cluster ficam em blocos `Related Articles:` no fim de seções do body principal, nunca na introdução, conclusão ou FAQs. Se o artigo for o primeiro post do cluster, não inserir bloco de related articles.
 
 ## Operational Framework
 
@@ -67,6 +67,7 @@ Natural, direto e preciso. O texto deve soar como foi escrito por uma pessoa rea
 - Links adicionais do body nunca repetem o link primário da introdução
 - `Related Articles:` aparece somente no body principal, no fim da seção
 - `Related Articles:` nunca aparece na introdução, conclusão ou FAQs
+- Primeiro post de um cluster novo não recebe bloco `Related Articles:`
 
 ## Integration
 
