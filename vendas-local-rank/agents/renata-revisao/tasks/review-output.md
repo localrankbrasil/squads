@@ -3,7 +3,7 @@ task: "Review Output"
 order: 1
 input: |
   - messages_file: caminho para mensagens-whatsapp.md (se existir)
-  - proposal_file: caminho para proposta-comercial.md (se existir)
+  - proposal_file: caminho para proposta-comercial.html (se existir)
   - persona: persona identificada (P1/P2/P3/P4)
   - operation_mode: modo de operação executado
 output: |
@@ -20,7 +20,7 @@ Revisa todos os outputs do squad (mensagens de WhatsApp e proposta comercial) co
 
 ## Process
 
-1. **Carregar os arquivos de output** — ler mensagens-whatsapp.md e/ou proposta-comercial.md conforme o modo de operação.
+1. **Carregar os arquivos de output** — ler mensagens-whatsapp.md e/ou proposta-comercial.html conforme o modo de operação.
 
 2. **Revisar mensagens de WhatsApp** (se existirem) contra:
    - Personalização: nome + negócio referenciados
@@ -36,7 +36,9 @@ Revisa todos os outputs do squad (mensagens de WhatsApp e proposta comercial) co
    - Personalização por persona aplicada
    - Cronograma realista (SEO ≥ 3–6 meses)
    - Sem desconto ou promessa de resultado imediato
-   - Próximos passos explícitos com pagamento antecipado
+   - Proposta em HTML slides, não markdown
+   - Investimento mensal, serviços adicionais e próximos passos em slides separados
+   - Próximos passos explícitos com contrato antes do pagamento upfront
 
 4. **Calcular score** por critério (1–10) com justificativa em uma frase.
 
@@ -95,7 +97,7 @@ Sugestão (não bloqueante): [melhoria opcional]
  REVISÃO DE QUALIDADE — VENDAS LOCAL RANK
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Outputs revisados: mensagens-whatsapp.md, proposta-comercial.md
+Outputs revisados: mensagens-whatsapp.md, proposta-comercial.html
 Persona: P3 — Marcus (Escalador)
 Revisão nº: 1 de 3
 

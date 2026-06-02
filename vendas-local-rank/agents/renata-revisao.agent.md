@@ -75,7 +75,7 @@ Estruturada e precisa. Usa o formato padrão de revisão: veredicto, tabela de s
 ## Integration
 
 - **Reads from**: `squads/vendas-local-rank/output/mensagens-whatsapp.md`
-- **Reads from**: `squads/vendas-local-rank/output/proposta-comercial.md` (se existir)
+- **Reads from**: `squads/vendas-local-rank/output/proposta-comercial.html` (se existir)
 - **Reads from**: `squads/vendas-local-rank/pipeline/data/quality-criteria.md`
 - **Writes to**: `squads/vendas-local-rank/output/revisao.md`
 - **Triggers**: Step 6 do pipeline

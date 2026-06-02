@@ -1,5 +1,35 @@
 # Output Examples — Vendas Local Rank Brasil
 
+## Exemplo 0: Proposta Comercial em HTML Slides — Padrão Atual
+
+O formato atual para propostas comerciais não é markdown. A proposta final deve ser um HTML de slides, publicado no GitHub Pages e compartilhado por link.
+
+Referência principal:
+`https://localrankbrasil.github.io/propostas/my-cleaning-angel/`
+
+Estrutura recomendada:
+
+1. Capa
+2. Cenário atual
+3. Dor principal
+4. O que propomos
+5. SEO Local
+6. Google + Meta Ads
+7. Social Media
+8. Resultado esperado
+9. SEO programático / expansão local, quando aplicável
+10. Investimento mensal
+11. Serviços adicionais
+12. Próximos passos
+
+Regras importantes:
+- Investimento mensal, serviços adicionais e próximos passos ficam em slides separados.
+- Em Ads, deixar claro quando o mínimo é mínimo de gestão, não mínimo de mídia.
+- Próximos passos devem seguir: confirmação → contrato → pagamento upfront → onboarding.
+- Usar branding da Local Rank: navy `#172259`, azul `#1d40ad`, verde `#62bb46`, Merriweather e Roboto.
+
+---
+
 ## Exemplo 1: Classificação de Lead + Primeira Mensagem (Persona 3 — Marcus)
 
 ### Input

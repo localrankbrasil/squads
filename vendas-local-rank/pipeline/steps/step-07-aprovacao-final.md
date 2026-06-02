@@ -22,5 +22,5 @@ Renata Revisão concluiu a revisão dos outputs.
 
 **Os outputs foram salvos em:**
 - `squads/vendas-local-rank/output/mensagens-whatsapp.md` (mensagens prontas para copiar)
-- `squads/vendas-local-rank/output/proposta-comercial.md` (proposta completa — se gerada)
+- `squads/vendas-local-rank/output/proposta-comercial.html` (proposta em HTML slides — se gerada)
 - `squads/vendas-local-rank/output/revisao.md` (relatório de revisão)

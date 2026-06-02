@@ -12,7 +12,7 @@ on_reject: 4
 
 Carregar antes de executar:
 - `squads/vendas-local-rank/output/mensagens-whatsapp.md` — mensagens geradas (se existir)
-- `squads/vendas-local-rank/output/proposta-comercial.md` — proposta gerada (se existir)
+- `squads/vendas-local-rank/output/proposta-comercial.html` — proposta em HTML slides gerada (se existir)
 - `squads/vendas-local-rank/output/classificacao-lead.md` — persona identificada
 - `squads/vendas-local-rank/pipeline/data/quality-criteria.md` — critérios de avaliação
 
@@ -35,7 +35,9 @@ Carregar antes de executar:
    - Personalização por persona aplicada?
    - Cronograma realista (≥ 3–6 meses para SEO)?
    - Sem desconto ou promessa de resultado imediato?
-   - Próximos passos com pagamento antecipado?
+   - HTML slides seguindo branding da Local Rank?
+   - Investimento mensal, serviços adicionais e próximos passos em slides separados?
+   - Próximos passos com contrato antes do pagamento upfront?
 
 4. Calcular score por critério (1–10) com justificativa.
 
