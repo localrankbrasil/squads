@@ -1,0 +1,29 @@
+name: "Landing Page Local Rank"
+code: "landing-page-local-rank"
+description: "Squad para transformar uma copy fornecida pelo usuario em landing page da Local Rank Brasil, com preview em GitHub Pages e handoff de implementacao para WordPress Elementor + Fluent Forms."
+icon: "🧩"
+language: "pt-BR"
+version: "1.0.0"
+
+skills:
+  - web_search
+  - web_fetch
+
+data:
+  - pipeline/data/brand-kit-local-rank.md
+  - pipeline/data/estrategia-local-rank.md
+  - pipeline/data/landing-page-playbook.md
+  - pipeline/data/elementor-fluent-forms-guide.md
+  - pipeline/data/form-config.md
+  - pipeline/data/technical-checklist.md
+
+pipeline: pipeline/pipeline.yaml
+
+agents:
+  - agents/lara-arquitetura.agent.md
+  - agents/nina-visual.agent.md
+  - agents/diego-elementor.agent.md
+  - agents/renata-revisao.agent.md
+
+memory: _memory/memories.md
+runs: _memory/runs.md

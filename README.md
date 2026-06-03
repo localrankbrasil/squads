@@ -8,6 +8,7 @@ Repositório central dos squads operacionais da Local Rank Brasil.
 squads/
 ├── opensquad/          # Core do Opensquad — criador e orquestrador de squads
 ├── branding-local-rank/  # Squad de branding
+├── landing-page-local-rank/  # Squad de landing pages para Elementor
 └── vendas-local-rank/    # Squad de vendas
 ```
 
