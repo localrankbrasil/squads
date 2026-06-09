@@ -1,0 +1,5 @@
+id,name,title,icon,execution,path
+carla-classificadora,Carla Classificadora,Lead Qualifier & Persona Analyst,🔍,inline,./agents/carla-classificadora.agent.md
+marcos-mensagem,Marcos Mensagem,WhatsApp Sales Copywriter,💬,inline,./agents/marcos-mensagem.agent.md
+pedro-proposta,Pedro Proposta,Commercial Proposal Writer,📋,inline,./agents/pedro-proposta.agent.md
+renata-revisao,Renata Revisão,Sales Quality Reviewer,✅,inline,./agents/renata-revisao.agent.md

@@ -1,0 +1,43 @@
+name: "Pipeline de Auditoria e Design de Marca"
+squad: "branding-local-rank"
+description: "Recebe um material de marca, audita contra o brand kit, e gera brief de design corrigido aprovado pela revisora final."
+
+steps:
+  - step: 1
+    file: pipeline/steps/step-01-checkpoint-submit.md
+    type: checkpoint
+    name: "Submissão do Material"
+
+  - step: 2
+    file: pipeline/steps/step-02-brand-audit.md
+    type: agent
+    agent: beatriz-branding
+    name: "Auditoria de Marca"
+
+  - step: 3
+    file: pipeline/steps/step-03-checkpoint-output.md
+    type: checkpoint
+    name: "Decisão de Output"
+
+  - step: 4
+    file: pipeline/steps/step-04-design-brief.md
+    type: agent
+    agent: caio-canvas
+    name: "Geração do Brief de Design"
+
+  - step: 5
+    file: pipeline/steps/step-05-brand-review.md
+    type: agent
+    agent: renata-revisao
+    name: "Revisão Final de Marca"
+    on_reject: 4
+
+  - step: 6
+    file: pipeline/steps/step-06-checkpoint-approval.md
+    type: checkpoint
+    name: "Aprovação Final"
+
+checkpoints:
+  - step: 1
+  - step: 3
+  - step: 6

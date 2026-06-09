@@ -1,0 +1,5 @@
+id,name,title,icon,execution,path
+beatriz-branding,Beatriz Branding,Auditora de Marca,🔍,inline,./agents/beatriz-branding.agent.md
+caio-canvas,Caio Canvas,Criador de Design,🎨,inline,./agents/caio-canvas.agent.md
+renata-revisao,Renata Revisão,Revisora Final de Marca,✅,inline,./agents/renata-revisao.agent.md
+daniel-dev,Daniel Dev,Desenvolvedor de Websites e Landings,💻,inline,./agents/daniel-dev.agent.md

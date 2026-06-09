@@ -1,0 +1,54 @@
+{
+  "squad": "vendas-local-rank",
+  "status": "completed",
+  "step": {
+    "current": 7,
+    "total": 7,
+    "label": "aprovacao-final"
+  },
+  "agents": [
+    {
+      "id": "carla-classificadora",
+      "name": "Carla Classificadora",
+      "icon": "🔍",
+      "status": "done",
+      "desk": {
+        "col": 1,
+        "row": 1
+      }
+    },
+    {
+      "id": "marcos-mensagem",
+      "name": "Marcos Mensagem",
+      "icon": "💬",
+      "status": "done",
+      "desk": {
+        "col": 2,
+        "row": 1
+      }
+    },
+    {
+      "id": "pedro-proposta",
+      "name": "Pedro Proposta",
+      "icon": "📋",
+      "status": "idle",
+      "desk": {
+        "col": 3,
+        "row": 1
+      }
+    },
+    {
+      "id": "renata-revisao",
+      "name": "Renata Revisão",
+      "icon": "✅",
+      "status": "done",
+      "desk": {
+        "col": 1,
+        "row": 2
+      }
+    }
+  ],
+  "handoff": null,
+  "startedAt": "2026-05-27T15:31:35-03:00",
+  "updatedAt": "2026-05-27T15:31:35-03:00"
+}
