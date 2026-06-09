@@ -1,5 +1,0 @@
-id,name,title,icon,execution,path
-lara-arquitetura,Lara Arquitetura,Landing Page Information Architect,🧱,inline,./agents/lara-arquitetura.agent.md
-nina-visual,Nina Visual,Frontend Preview Designer,🎨,inline,./agents/nina-visual.agent.md
-diego-elementor,Diego Elementor,WordPress Elementor Handoff Specialist,🛠️,inline,./agents/diego-elementor.agent.md
-renata-revisao,Renata Revisão,Landing Page Quality Reviewer,✅,inline,./agents/renata-revisao.agent.md
