@@ -28,9 +28,9 @@ Estruturado e preciso. Entrega o bloco de SEO final formatado e pronto para uso,
 1. **Aplicar `seo-playbook.md` na íntegra.** Cada item do Final SEO Gate deve ser verificado e marcado.
 2. **Validar todos os outbound links.** Abrir cada link, confirmar que carrega, confirmar relevância, confirmar que não é concorrente. Substituir quebrados.
 3. **Contar caracteres.** SEO title ~60 caracteres, meta description 120-156 caracteres (ideal 150-156). Sem estimativas.
-4. **FAQs para People Also Ask.** 5 perguntas reais, pelo menos 3 com a focus keyword exata, respostas de 2 a 4 frases.
+4. **FAQs para People Also Ask e Yoast.** 5 perguntas reais, pelo menos 3 com a focus keyword exata, respostas de 2 a 4 frases. Quando publicar no WordPress com Yoast, FAQs devem virar bloco `wp:yoast/faq-block` com schema FAQPage validado.
 5. **Links internos sem duplicação.** Confirmar que cada URL interna aparece no máximo uma vez e que o link primário da introdução não reaparece no body.
-6. **Cluster links no formato correto.** Confirmar que `Related Articles:` aparece somente no body principal, no fim de seções, e que posts antigos do cluster recebem backlink quando aplicável. Se for o primeiro post de um cluster novo, confirmar ausência de blocos de cluster.
+6. **Cluster links no formato correto.** Confirmar que `Related Articles:` aparece somente no body principal, no fim de seções, e que posts antigos do cluster recebem backlink quando aplicável. Em clusters com 3+ posts, confirmar padrão uniforme: bloco no fim da seção 1 e bloco no fim da seção 2 em todos os posts do cluster. Se for o primeiro post de um cluster novo, confirmar ausência de blocos de cluster.
 
 ## Operational Framework
 
@@ -48,13 +48,15 @@ Estruturado e preciso. Entrega o bloco de SEO final formatado e pronto para uso,
 
 6. **Validar links internos.** Confirmar anchor text exato, distribuição natural, zero URLs duplicadas e ausência do link primário da introdução nos links adicionais do body.
 
-7. **Validar cluster.** Se houver cluster, confirmar blocos `Related Articles:` com um link por linha no fim de seções do body principal. Nunca aceitar esses blocos na introdução, conclusão ou FAQs.
+7. **Validar cluster.** Se houver cluster, confirmar blocos `Related Articles:` com um link por linha no fim de seções do body principal. Nunca aceitar esses blocos na introdução, conclusão ou FAQs. Para clusters com 3+ posts, validar que o novo post e os posts antigos têm blocos no fim da primeira e segunda seções, linkando para os outros posts sem self-link.
 
 8. **Validar outbound links.** Para cada link externo: abrir, confirmar que carrega, confirmar relevância, confirmar que não é concorrente, confirmar que não está apontando para homepage genérica.
 
-9. **Escrever FAQs.** 5 perguntas otimizadas para People Also Ask, mínimo 3 com a focus keyword exata, respostas diretas de 2 a 4 frases.
+9. **Escrever FAQs.** 5 perguntas otimizadas para People Also Ask, mínimo 3 com a focus keyword exata, respostas diretas de 2 a 4 frases. Se o destino for WordPress com Yoast, entregar em formato Yoast FAQ block e validar `wp-block-yoast-faq-block`, 5 `schema-faq-section`, 5 `schema-faq-question`, `FAQPage` e 5 Question schema nodes.
 
-10. **Montar SEO output.** Bloco final formatado com todos os elementos.
+10. **Montar SEO output.** Bloco final formatado com todos os elementos. Marcar SEO Output, validação e sugestões de imagem como notas operacionais; não permitir que entrem como conteúdo público do WordPress.
+
+11. **Validar publicação WordPress.** Quando houver publicação, confirmar H1 único, Yoast title/meta, canonical, categoria, featured image, external links com nova aba, FAQ schema e cluster links ao vivo.
 
 ## Output Format
 
@@ -111,8 +113,13 @@ FINAL SEO GATE
 [ ] Nenhuma URL interna duplicada
 [ ] Link primário da introdução não repetido no body
 [ ] Cluster links em blocos Related Articles no fim de seções do body principal, quando aplicável
+[ ] Clusters com 3+ posts têm Related Articles no fim da seção 1 e seção 2 em todos os posts do cluster
 [ ] Posts antigos do cluster atualizados com backlink para o novo artigo, quando aplicável
 [ ] Primeiro post de cluster novo não recebeu Related Articles nem backlinks em posts antigos
+[ ] FAQs em formato Yoast FAQ block quando publicar no WordPress
+[ ] FAQPage e 5 Question schema nodes validados na URL publicada
+[ ] SEO Output e Image Suggestions não publicados como conteúdo visível
+[ ] H1 único validado na URL publicada
 ```
 
 ## Integration

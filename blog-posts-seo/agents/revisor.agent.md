@@ -52,8 +52,11 @@ Estruturado e cirúrgico. Entrega um relatório de revisão claro: o que passou,
 2. Confirmar que a revisão de readability foi aplicada.
 3. Confirmar que o SEO output está completo e correto.
 4. Confirmar que as imagens estão sugeridas com alt text.
-5. Confirmar que as FAQs estão presentes e otimizadas.
-6. Emitir veredito: APROVADO ou BLOQUEADO (com o que falta).
+5. Confirmar que as FAQs estão presentes, otimizadas e, em publicação WordPress com Yoast, estruturadas como bloco Yoast FAQ.
+6. Confirmar que a conclusão aparece antes das FAQs.
+7. Confirmar que SEO Output, sugestões de imagem e checklist não aparecem como conteúdo público publicado.
+8. Confirmar que cluster links seguem o padrão uniforme quando aplicável.
+9. Emitir veredito: APROVADO ou BLOQUEADO (com o que falta).
 
 ## Output Format — Step 8
 
@@ -97,6 +100,7 @@ READABILITY
 [ ] Nenhum bloco acima de 300 palavras sem heading
 [ ] Zero sentence starters repetidos em sequência
 [ ] Nenhum parágrafo acima de 150 palavras
+[ ] Quando exigido pelo cliente, todo parágrafo público tem 400+ caracteres
 [ ] Transition words em ≥ 30% das frases
 [ ] Complex words < 10%
 
@@ -122,8 +126,23 @@ CONTEÚDO
 [ ] Introdução: 3 parágrafos sem heading
 [ ] 4 seções com H2 + 3 H3s cada
 [ ] Conclusão: H2 relevante, 2 parágrafos, sem "Conclusion"
+[ ] Conclusão aparece antes das FAQs
 [ ] Zero bullets, listas, tabelas, divisórias no artigo
 [ ] Tom natural, humano, sem frases de IA genéricas
+
+WORDPRESS / YOAST
+[ ] URL publicada tem H1 único
+[ ] SEO Output, sugestões de imagem e checklist não aparecem como conteúdo público
+[ ] Yoast title/meta configurados
+[ ] Canonical aponta para a URL final
+[ ] Categoria correta configurada
+[ ] Featured image presente com alt text
+[ ] FAQs usam bloco Yoast FAQ quando WordPress/Yoast
+[ ] `wp-block-yoast-faq-block` presente
+[ ] 5 `schema-faq-section`
+[ ] 5 `schema-faq-question`
+[ ] `FAQPage` presente no schema
+[ ] 5 Question schema nodes
 
 ENTREGÁVEIS
 [ ] Artigo completo
@@ -134,6 +153,12 @@ ENTREGÁVEIS
 [ ] Meta description
 [ ] URL slug
 [ ] 5 FAQs
+
+CLUSTER
+[ ] Related Articles não aparece na introdução, conclusão ou FAQs
+[ ] Cluster com 3+ posts tem Related Articles no fim da seção 1 e seção 2
+[ ] Posts antigos do cluster foram normalizados com o mesmo padrão
+[ ] Cada post do cluster linka para os outros posts sem self-link nos blocos Related Articles
 
 VEREDITO: [APROVADO / BLOQUEADO — lista do que falta]
 ```
