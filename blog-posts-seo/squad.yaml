@@ -1,6 +1,6 @@
 name: "Blog Posts SEO"
 code: "blog-posts-seo"
-description: "Squad especializado em criar blog posts otimizados para SEO, com foco em brasileiros que possuem negócios locais nos EUA. Cobre estratégia de keyword, pesquisa, escrita, otimização, imagens e checklist de publicação."
+description: "Squad especializado em criar blog posts otimizados para SEO, com foco em brasileiros que possuem negócios locais nos EUA. Cobre estratégia de keyword, pesquisa, escrita, arquitetura de links internos e cluster, otimização, imagens e checklist de publicação."
 icon: "✍️"
 language: "pt-BR"
 
@@ -22,6 +22,7 @@ agents:
   - agents/estrategista-seo.agent.md
   - agents/pesquisador.agent.md
   - agents/redator.agent.md
+  - agents/arquiteto-links-internos.agent.md
   - agents/otimizador-seo.agent.md
   - agents/revisor.agent.md
   - agents/diretor-visual.agent.md

@@ -1,4 +1,4 @@
-# Step 9 — Quality Check Final
+# Step 10 — Quality Check Final
 
 ## Tipo
 agent: revisor
@@ -7,7 +7,7 @@ agent: revisor
 Validar o checklist completo de entrega: readability, SEO, links, conteúdo, WordPress/Yoast, cluster e entregáveis.
 
 ## Input
-Artigo revisado (Step 8) + SEO output (Step 7) + imagens (Step 6).
+Artigo revisado (Step 9) + relatório de links internos (Step 6) + SEO output (Step 8) + imagens (Step 7).
 
 ## Output esperado
 Quality check final com todos os itens verificados e veredito: APROVADO ou BLOQUEADO. Quando houver publicação WordPress, incluir validação da URL final: H1 único, Yoast title/meta, canonical, categoria, featured image, FAQ schema, links externos e Related Articles.

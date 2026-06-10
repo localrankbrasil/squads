@@ -1,6 +1,6 @@
 name: "Pipeline de Criação de Blog Post SEO"
 squad: "blog-posts-seo"
-description: "Coleta inputs, define estratégia SEO, pesquisa, escreve, gera imagens, otimiza e entrega blog post completo com SEO output, FAQs e checklist de publicação."
+description: "Coleta inputs, define estratégia SEO, pesquisa, escreve, normaliza links internos e cluster, gera imagens, otimiza e entrega blog post completo com SEO output, FAQs e checklist de publicação."
 
 steps:
   - step: 1
@@ -32,30 +32,36 @@ steps:
     name: "Escrita do Artigo"
 
   - step: 6
+    file: pipeline/steps/step-06-internal-links.md
+    type: agent
+    agent: arquiteto-links-internos
+    name: "Links Internos e Cluster"
+
+  - step: 7
     file: pipeline/steps/step-06-featured-image.md
     type: agent
     agent: diretor-visual
     name: "Imagem Destacada e Sugestões"
 
-  - step: 7
+  - step: 8
     file: pipeline/steps/step-07-seo-output.md
     type: agent
     agent: otimizador-seo
     name: "Otimização SEO e Output"
 
-  - step: 8
+  - step: 9
     file: pipeline/steps/step-08-readability-review.md
     type: agent
     agent: revisor
     name: "Revisão de Readability"
 
-  - step: 9
+  - step: 10
     file: pipeline/steps/step-09-quality-check.md
     type: agent
     agent: revisor
     name: "Quality Check Final"
 
-  - step: 10
+  - step: 11
     file: pipeline/steps/step-10-checkpoint-approval.md
     type: checkpoint
     name: "Aprovação Final"
@@ -63,4 +69,4 @@ steps:
 checkpoints:
   - step: 1
   - step: 4
-  - step: 10
+  - step: 11

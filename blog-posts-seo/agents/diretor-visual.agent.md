@@ -69,7 +69,7 @@ Alt text: [alt text com keyword e localização quando relevante]
 
 ## Integration
 
-- **Reads from**: artigo completo do Redator (Step 5) + focus keyword dos inputs
-- **Writes to**: bloco de imagens do output final (Step 6)
-- **Triggers**: Step 6 do pipeline, após escrita do artigo
-- **Depends on**: artigo completo
+- **Reads from**: artigo com links internos e cluster normalizados (Step 6) + focus keyword dos inputs
+- **Writes to**: bloco de imagens do output final (Step 7)
+- **Triggers**: Step 7 do pipeline, após links internos e cluster
+- **Depends on**: artigo com links internos normalizados

@@ -78,6 +78,6 @@ Natural, direto e preciso. O texto deve soar como foi escrito por uma pessoa rea
 ## Integration
 
 - **Reads from**: outline aprovado (Step 4) + briefing de pesquisa (Step 3) + `pipeline/data/skill-blog-post-writer.md`
-- **Writes to**: rascunho completo do blog post (Step 6)
+- **Writes to**: rascunho completo do blog post (Step 5), antes da etapa de links internos
 - **Triggers**: Step 5 do pipeline, após aprovação do outline
 - **Depends on**: outline aprovado + briefing de pesquisa
