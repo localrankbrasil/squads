@@ -12,7 +12,6 @@ data:
   - pipeline/data/skill-blog-post-writer.md
   - pipeline/data/seo-playbook.md
   - pipeline/data/readability-playbook.md
-  - pipeline/data/fluxo-operacional-asana.md
   - pipeline/data/templates/blog-post.md
   - pipeline/data/templates/checklist-seo.md
 

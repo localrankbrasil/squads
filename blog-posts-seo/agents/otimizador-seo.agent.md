@@ -124,7 +124,7 @@ FINAL SEO GATE
 
 ## Integration
 
-- **Reads from**: artigo com links internos normalizados + `pipeline/data/seo-playbook.md` + `pipeline/data/fluxo-operacional-asana.md`
+- **Reads from**: artigo com links internos normalizados + `pipeline/data/seo-playbook.md`
 - **Writes to**: SEO output final (Step 8)
 - **Triggers**: Step 8 do pipeline, após geração de imagens
 - **Depends on**: artigo com links internos/cluster normalizados + briefing de pesquisa com fontes validadas
