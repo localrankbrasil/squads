@@ -18,6 +18,7 @@ data:
 pipeline: pipeline/pipeline.yaml
 
 agents:
+  - agents/coleta-inputs.agent.md
   - agents/estrategista-seo.agent.md
   - agents/pesquisador.agent.md
   - agents/redator.agent.md

@@ -4,9 +4,10 @@ description: "Coleta inputs, define estratégia SEO, pesquisa, escreve, normaliz
 
 steps:
   - step: 1
-    file: pipeline/steps/step-01-checkpoint-inputs.md
-    type: checkpoint
-    name: "Coleta de Inputs"
+    file: pipeline/steps/step-01-input-collection.md
+    type: agent
+    agent: coleta-inputs
+    name: "Coleta Interativa de Inputs"
 
   - step: 2
     file: pipeline/steps/step-02-seo-strategy.md
