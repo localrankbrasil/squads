@@ -1,73 +1,54 @@
 name: "Pipeline de Criação de Blog Post SEO"
 squad: "blog-posts-seo"
-description: "Coleta inputs, define estratégia SEO, pesquisa, escreve, normaliza links internos e cluster, gera imagens, otimiza e entrega blog post completo com SEO output, FAQs e checklist de publicação."
+description: "Novo pipeline: 6 steps limpos. Inputs → Redação com 3 playbooks → Validação links → Publicação WordPress → Geração imagem → Interlinks cluster."
 
 steps:
   - step: 1
-    file: pipeline/steps/step-01-input-collection.md
+    file: pipeline/steps/step-01-coleta-inputs.md
     type: agent
     agent: coleta-inputs
     name: "Coleta Interativa de Inputs"
+    description: "Coleta inputs estruturados do usuário para blog post (título, keyword, links, contexto cliente, cluster info)"
 
   - step: 2
-    file: pipeline/steps/step-02-seo-strategy.md
+    file: pipeline/steps/step-02-redacao-blog-post.md
     type: agent
-    agent: estrategista-seo
-    name: "Estratégia SEO"
+    agent: redator-pesquisador
+    name: "Redação do Blog Post SEO"
+    description: "Escreve blog post completo seguindo Blog Post Writer Skill, SEO Playbook, Readability Playbook com 8 passes de revisão"
 
   - step: 3
-    file: pipeline/steps/step-03-research.md
+    file: pipeline/steps/step-03-validacao-links.md
     type: agent
-    agent: pesquisador
-    name: "Pesquisa do Tema"
+    agent: validador-links
+    name: "Validação de Links Externos"
+    description: "Valida todos os links externos, substitui quebrados, verifica formatação HTML"
 
   - step: 4
-    file: pipeline/steps/step-04-checkpoint-outline.md
-    type: checkpoint
-    name: "Aprovação do Outline"
+    file: pipeline/steps/step-04-publicacao-wordpress.md
+    type: agent
+    agent: publicador-wordpress
+    name: "Publicação no WordPress"
+    description: "Publica post no WordPress, configura Yoast SEO (keyword, title, meta), FAQs widget. SEM featured image ainda."
+    checkpoint: true
+    checkpoint_name: "Aprovação da Publicação"
 
   - step: 5
-    file: pipeline/steps/step-05-write.md
+    file: pipeline/steps/step-05-geracao-imagem.md
     type: agent
-    agent: redator
-    name: "Escrita do Artigo"
+    agent: gerador-imagem
+    name: "Geração de Imagem em Destaque"
+    description: "Gera imagem ultra-realista 794x529px usando prompt exata, faz upload no WordPress, define como featured image"
 
   - step: 6
-    file: pipeline/steps/step-06-internal-links.md
+    file: pipeline/steps/step-06-interlinks-cluster.md
     type: agent
-    agent: arquiteto-links-internos
-    name: "Links Internos e Cluster"
-
-  - step: 7
-    file: pipeline/steps/step-06-featured-image.md
-    type: agent
-    agent: diretor-visual
-    name: "Imagem Destacada e Sugestões"
-
-  - step: 8
-    file: pipeline/steps/step-07-seo-output.md
-    type: agent
-    agent: otimizador-seo
-    name: "Otimização SEO e Output"
-
-  - step: 9
-    file: pipeline/steps/step-08-readability-review.md
-    type: agent
-    agent: revisor
-    name: "Revisão de Readability"
-
-  - step: 10
-    file: pipeline/steps/step-09-quality-check.md
-    type: agent
-    agent: revisor
-    name: "Quality Check Final"
-
-  - step: 11
-    file: pipeline/steps/step-10-checkpoint-approval.md
-    type: checkpoint
-    name: "Aprovação Final"
+    agent: criador-interlinks
+    name: "Interlinks nos Posts Antigos do Cluster"
+    description: "Atualiza posts antigos do cluster com backlinks para o novo post usando Related Articles"
+    checkpoint: true
+    checkpoint_name: "Confirmação de Cluster Finalizado"
 
 checkpoints:
-  - step: 1
   - step: 4
-  - step: 11
+  - step: 6

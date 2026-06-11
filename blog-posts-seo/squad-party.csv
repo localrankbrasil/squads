@@ -1,0 +1,7 @@
+agent_name,role,description,step
+coleta-inputs,Input Collection Agent,Coleta inputs estruturados do usuário para blog post,1
+redator-pesquisador,Blog Post Writer & Researcher,Escreve blog posts SEO-otimizados seguindo os 3 playbooks,2
+validador-links,Link Validator,Valida links externos e substitui quebrados por alternativas,3
+publicador-wordpress,WordPress Publisher,Publica post no WordPress com todas as configs Yoast,4
+gerador-imagem,Featured Image Generator,Gera imagem realista 794x529 e define como featured,5
+criador-interlinks,Internal Link Architect,Atualiza posts antigos do cluster com backlinks,6
