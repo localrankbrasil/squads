@@ -15,7 +15,9 @@ Ask for:
 - Conclusion Internal Link: URL and exact anchor text.
 - Client Info: business type, services, target audience, tone, differentiators, positioning, and anything useful for personalization.
 
-If the user skips optional links or says they do not have them, proceed without blocking.
+If the user already provided enough information, proceed without blocking. Ask only for genuinely missing critical inputs that cannot be inferred from client context, repo context, or the brief.
+
+Client context is mandatory. The post must be tailored to the specific client, service positioning, audience, service area, and tone. Naturally reference the client or business context when it helps the reader, but avoid promotional filler.
 
 ## Step 2 - Write The Blog Post
 
@@ -33,6 +35,30 @@ Write the full post in the specified language.
 - Conclusion must have an H2 labeled "Wrapping Up" or a topically relevant phrase.
 - Never use "Conclusion" or "In Conclusion".
 - Conclusion must have 2 paragraphs.
+- The conclusion must appear before FAQs.
+- FAQs must appear after the conclusion.
+
+### Public Content vs Operational Notes
+
+Separate public article content from delivery notes.
+
+Public WordPress content includes:
+
+- H1/title handled according to the publishing context.
+- Introduction.
+- Main body sections.
+- Related Articles blocks.
+- Conclusion.
+- Yoast FAQ block.
+
+Operational delivery notes include:
+
+- Featured image prompt.
+- Supporting image suggestions.
+- SEO Output.
+- Final checklist notes.
+
+Do not publish operational notes as visible article content in WordPress.
 
 ## Yoast Readability Hard Limits
 
@@ -58,6 +84,26 @@ Safe internal targets:
 - Transition words: aim for at least 35% of sentences, never below 30%.
 - Complex words: aim below 8%, never above 10% when the check is available.
 - Consecutive starters: zero repeated starters in adjacent sentences.
+
+## Paragraph Depth Requirement
+
+For client blog posts that require deeper prose, every public article paragraph must have at least 400 characters.
+
+This applies to:
+
+- introduction paragraphs
+- body paragraphs
+- conclusion paragraphs
+- FAQ answers when they appear as visible paragraph text
+
+Keep these depth rules compatible with Yoast:
+
+- Each public paragraph should be at least 400 characters unless the client explicitly asks for shorter copy.
+- No paragraph may exceed 150 words.
+- Each H3 block must stay under 280 words.
+- No block between headings may exceed 300 words.
+
+If a paragraph is under 400 characters, deepen it with concrete cause, example, local detail, practical consequence, or contractor logic. Do not add filler.
 
 ### Passive Voice
 
@@ -371,6 +417,17 @@ Rules:
 - after publishing a new cluster post, update old cluster posts with a backlink to the new post
 - skip all cluster-link insertion when the post is the first article in a new cluster
 
+### Uniform Cluster Placement
+
+When a cluster has at least 3 posts, normalize the cluster across all relevant posts:
+
+- New post: add one `Related Articles:` block at the end of the first main body section and one at the end of the second main body section.
+- Older cluster posts: update them to follow the same pattern, with one `Related Articles:` block at the end of the first main body section and one at the end of the second main body section.
+- Each block should point to a different related post when possible.
+- Each post should link to the other cluster posts without linking to itself.
+- Remove or relocate older cluster links that appear near the conclusion, FAQ section, or an inconsistent section.
+- Validate the live/raw content after publishing: each post in the cluster should have exactly the intended number of `Related Articles:` blocks and backlinks.
+
 ## External Links
 
 Include 5 authoritative external links from `.gov`, `.edu`, or official industry organizations.
@@ -453,6 +510,8 @@ Provide a clearly labeled block at the end with:
 - Meta Description between 150 and 156 characters
 - URL Slug
 
+This block is an operational deliverable only. Do not publish it as visible WordPress article content.
+
 ## Step 5 - FAQs
 
 Write 5 FAQs optimized for Google's People Also Ask box.
@@ -463,6 +522,53 @@ Rules:
 - Include keyword and location in questions.
 - At least 3 questions must use the exact keyword.
 - Answers must be clear, direct, practical, and 2 to 4 sentences.
+
+### Yoast FAQ Block Requirement
+
+When publishing to WordPress with Yoast, FAQs must use a Yoast FAQ block, not normal H3 headings and paragraphs.
+
+Use Gutenberg/Yoast FAQ structure:
+
+```html
+<!-- wp:yoast/faq-block {"questions":[...]} -->
+<div class="schema-faq wp-block-yoast-faq-block">
+  <div class="schema-faq-section" id="faq-question-example">
+    <strong class="schema-faq-question">Question text?</strong>
+    <p class="schema-faq-answer">Answer text.</p>
+  </div>
+</div>
+<!-- /wp:yoast/faq-block -->
+```
+
+After publishing, validate:
+
+- `wp-block-yoast-faq-block` is present.
+- 5 `schema-faq-section` elements are present.
+- 5 `schema-faq-question` elements are present.
+- `FAQPage` appears in Yoast schema.
+- 5 Question schema nodes are present.
+
+If these checks fail, the FAQ task is not complete.
+
+## WordPress Publishing Requirements
+
+When publishing to WordPress:
+
+- If the WordPress theme renders the post title as the page H1, do not include a second visible H1 inside post content.
+- Publish only public article content. Exclude SEO Output, image suggestions, and checklist notes from the visible post body.
+- Configure title, slug, category, featured image, Yoast SEO title, Yoast meta description, and focus keyword.
+- Validate the final URL after publishing.
+
+Final live checks:
+
+- Single visible H1.
+- Yoast title/meta present.
+- Canonical points to the final URL.
+- Featured image present with SEO filename/title/alt/caption/description when available.
+- Correct category present.
+- External links open in a new tab with `rel="noopener noreferrer"` when HTML is used.
+- Yoast FAQ block/schema present when FAQs are included.
+- Related Articles placement matches the cluster rules.
 
 ## Step 6 - Final Quality Check
 
@@ -480,11 +586,17 @@ Before outputting, verify:
 - every H3 block stays under 280 words
 - no two consecutive sentences start with the same word
 - every paragraph stays below 150 words
+- every public paragraph has at least 400 characters when the client requires deeper prose
 - transition words appear in at least 30% of sentences
 - complex words stay below 10% when the check is available
 - internal links use exact anchor text
 - 5 authoritative external links are included
 - outbound links work and open in a new tab when HTML is used
 - broken outbound links are replaced with the closest authoritative source
+- Yoast FAQ block and FAQPage schema are present when publishing to WordPress
+- conclusion appears before FAQs
+- SEO Output and Image Suggestions are not published as visible article content
+- WordPress live URL has a single visible H1
+- cluster posts are normalized with Related Articles at the end of section 1 and section 2 when the cluster has 3+ posts
 - no bullets, numbered lists, tables, or dividers appear in the final blog post
 - tone is natural, human, and conversational

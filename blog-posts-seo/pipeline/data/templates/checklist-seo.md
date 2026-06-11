@@ -24,6 +24,8 @@
 - [ ] Cada H3 tem 3 paragrafos
 - [ ] Conclusao tem H2 que nao usa "Conclusion" ou "In Conclusion"
 - [ ] Conclusao tem 2 paragrafos
+- [ ] Conclusao aparece antes das FAQs
+- [ ] FAQs aparecem depois da conclusao
 
 ## SEO
 
@@ -50,8 +52,11 @@
 - [ ] Link interno principal da introducao nao reaparece no body
 - [ ] Links internos adicionais distribuidos pelo body sem concentrar varios links no mesmo paragrafo
 - [ ] Links de cluster usam bloco `Related Articles:` no fim de secoes do body principal, quando aplicavel
+- [ ] Em clusters com 3+ posts, ha um bloco `Related Articles:` no fim da primeira secao e outro no fim da segunda secao
 - [ ] Bloco `Related Articles:` nao aparece na introducao, conclusao ou FAQs
 - [ ] Posts antigos do cluster receberam backlink para o novo artigo, quando aplicavel
+- [ ] Posts antigos do cluster foram normalizados com o mesmo padrao de blocos na primeira e segunda secao, quando houver 3+ posts
+- [ ] Cada post do cluster linka para os outros posts sem self-link nos blocos `Related Articles:`
 - [ ] Se for primeiro post de cluster novo, nenhum bloco `Related Articles:` foi inserido
 - [ ] 5 links externos autoritativos incluidos naturalmente
 - [ ] Links externos verificados e funcionando
@@ -68,6 +73,7 @@
 - [ ] Nenhum bloco H3 passa de 280 palavras; ideal entre 220 e 250 palavras
 - [ ] Nenhum paragrafo em H3 passa de 100 palavras; ideal entre 60 e 85 palavras
 - [ ] Nenhum paragrafo passa de 150 palavras; meta interna abaixo de 120 palavras
+- [ ] Quando o cliente exigir profundidade, todo paragrafo publico tem 400+ caracteres
 - [ ] Nenhuma frase consecutiva comeca com a mesma palavra
 - [ ] Nenhum paragrafo tem duas frases longas em sequencia
 - [ ] Cada paragrafo comeca com a ideia principal
@@ -88,6 +94,18 @@
 - [ ] Featured image prompt gerado
 - [ ] 3 sugestoes de imagem de apoio geradas
 - [ ] 5 FAQs criadas
+- [ ] FAQs em formato Yoast FAQ block quando publicar em WordPress com Yoast
+- [ ] `wp-block-yoast-faq-block` presente na URL publicada
+- [ ] 5 `schema-faq-section` presentes na URL publicada
+- [ ] 5 `schema-faq-question` presentes na URL publicada
+- [ ] `FAQPage` presente no schema
+- [ ] 5 Question schema nodes presentes no schema
+- [ ] SEO Output, sugestoes de imagem e checklist nao foram publicados como conteudo visivel
+- [ ] URL publicada tem H1 unico
+- [ ] Yoast title/meta configurados
+- [ ] Canonical aponta para URL final
+- [ ] Categoria correta configurada
+- [ ] Featured image presente com alt text
 - [ ] Arquivo final salvo
 - [ ] Trocas de links quebrados documentadas, se houver
 - [ ] Contexto atualizado

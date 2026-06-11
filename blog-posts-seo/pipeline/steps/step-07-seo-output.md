@@ -1,16 +1,16 @@
-# Step 7 — Otimização SEO e Output
+# Step 8 — Otimização SEO e Output
 
 ## Tipo
 agent: otimizador-seo
 
 ## Objetivo
-Revisar e otimizar todos os elementos SEO on-page, validar outbound links, escrever FAQs e montar o bloco de SEO output final.
+Revisar e otimizar todos os elementos SEO on-page, validar outbound links, escrever FAQs, preparar bloco Yoast FAQ quando houver publicação WordPress com Yoast, e montar o bloco de SEO output final.
 
 ## Input
-Artigo completo (Step 5) + fontes externas + focus keyword.
+Artigo com links internos e cluster normalizados (Step 6) + imagens (Step 7) + fontes externas + focus keyword.
 
 ## Output esperado
-SEO output completo: focus keyword, SEO title (~60 chars), meta description (150-156 chars), URL slug, validação de outbound links, 5 FAQs, Final SEO Gate checklist.
+SEO output completo: focus keyword, SEO title (~60 chars), meta description (150-156 chars), URL slug, validação de outbound links, 5 FAQs, bloco Yoast FAQ quando aplicável, Final SEO Gate checklist.
 
 ## Critério de Conclusão
-Todos os items do Final SEO Gate marcados como verificados. Nenhum outbound link quebrado.
+Todos os items do Final SEO Gate marcados como verificados. Nenhum outbound link quebrado. Se houver WordPress/Yoast, FAQs preparadas em formato `wp:yoast/faq-block` e SEO Output marcado como nota operacional, não como conteúdo público.

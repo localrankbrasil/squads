@@ -1,4 +1,4 @@
-# Step 8 — Revisão de Readability
+# Step 9 — Revisão de Readability
 
 ## Tipo
 agent: revisor
@@ -7,7 +7,7 @@ agent: revisor
 Aplicar o readability-playbook.md para corrigir voz passiva, frases longas, sentence starters repetidos, parágrafos longos, falta de transition words e complexidade de palavras.
 
 ## Input
-Artigo completo (Step 5).
+Artigo com links internos, cluster e SEO output aplicados (Steps 6 e 8).
 
 ## Output esperado
 Artigo revisado com relatório de readability: o que foi corrigido, percentuais antes/depois, status de cada check.
